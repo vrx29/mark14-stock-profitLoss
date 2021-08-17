@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f7f7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.stock-card {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+.stock-name {
+  display: flex;
+  align-items: center;
+}
+
+.stock-name i {
+  color: #3f37c9;
+  padding: 0 10px;
+}
+
+.stock-price {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.stock-price small {
+  padding-right: 10px;
+  color: #39a97c;
+}
+
+.stock-price i {
+  font-size: 1.5rem;
+}
+
+.stock-price .loss {
+  color: #e63946;
+}
+
+.stock-price .profit {
+  color: #39a97c;
+  padding-top: 4px;
+}
+
+.container {
+  height: 85vh;
+  margin: 1rem auto;
+  width: 90vw;
+  display: flex;
+  background-color: #fff;
+}
+
+h1 {
+  font-weight: bolder;
+}
+.left {
+  width: 60%;
+  padding: 0px 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  width: 40%;
+  padding: 0 4rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+.item {
+  margin: 20px 0;
+}
+
+input {
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid #6c757d;
+  width: 100px;
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  margin-top: 2rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100rem;
+  text-align: center;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+  background-color: #ff006e;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  transition: color 300ms;
+}
+button:active {
+  color: #e2e2e2;
+}
+button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.output {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95vw;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+
+  .right {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .right img {
+    display: block;
+    max-width: 80%;
+  }
+}
